@@ -1,2 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
 
-testing
+    <!-- ============ NAV ============
+         Copy this same block into every page, and change which
+         link has class="active" to match the current page. -->
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="research.html">Research</a>
+      <a href="teaching.html">Teaching</a>
+    </nav>
+
+    <!-- ============ INTRO ============ -->
+    <header>
+      <h1>Amelie Tolvin</h1>
+      <p class="tagline">PhD Candidate, Political Science (University of Toronto)</p>
+      <p>
+
+      </p>
+    </header>
+
+    <!-- ============ CONTACT ============
+         Replace the placeholder links with your real ones. -->
+    <section>
+      <h2>Contact</h2>
+      <div class="contact-list">
+        <a href="mailto:amelie.tolvin@mail.utoronto.ca">Email</a>
+        <a href="https://bsky.app/profile/atolvin.bsky.social">Bluesky</a>
+        <a href="https://www.linkedin.com/in/amelietolvin/">LinkedIn</a>
+      </div>
+    </section>
+
+    <footer>
+      &copy; <span id="year"></span> Amelie Tolvin
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
