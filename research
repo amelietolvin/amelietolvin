@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="publications.html" class="active">Publications</a>
+    </nav>
+
+    <header>
+      <h1>Research</h1>
+    </header>
+
+    <!-- ============ PUBLICATIONS ============
+
+    <section>
+      <div class="item">
+        <h3><a href="https://www.ssoar.info/ssoar/bitstream/handle/document/104069/ssoar-belarusad-2025-2-tolvin-Repression_and_Protest_in_Belarus.pdf?sequence=1">"Repression and Protest in Belarus: a Retrospective Review of State Strategies in 2020"</a></h3>
+        <p>Amelie Tolvin, Belarus Analytical Digest, '2025'</p>
+      </div>
+
+      <div class="item">
+        <h3><a href="https://doi.org/10.1080/13518046.2025.2548727">Reconstructing Kremlin Strategic Deception: the Logic of Disinformation Narratives During the First Phase of the Full-Scale Invasion of Ukraine</a></h3>
+        <p>Katri Pynnöniemi and Amelie Tolvin, Journal of Slavic Military Studies '38 (3)', '2025'</p>
+      </div>
+    </section>
+
+    <footer>
+      &copy; <span id="year"></span> Amelie Tolvin
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
