@@ -111,11 +111,29 @@ a:hover, a:focus {
 }
 
 /* ---------------- Contact links ---------------- */
+.contact-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
 .contact-list a {
-  border-bottom: none;
-  font-size: 1.4rem;
+  display: inline-block;
+  padding: 0.55rem 1.2rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
 }
 
 .contact-list a:hover {
-  opacity: 0.7;
+  border-color: var(--accent);
+  background-color: rgba(37, 62, 87, 0.05);
+}
+
+footer {
+  margin-top: 5rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-style: italic;
 }
