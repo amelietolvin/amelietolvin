@@ -1,0 +1,125 @@
+/* ------------------------------------------------------------
+   COLORS & FONT — change these to reskin every page at once.
+------------------------------------------------------------ */
+:root {
+  --bg: #f6f5f1;
+  --ink: #211f1c;
+  --muted: #726d63;
+  --accent: #253e57;
+  --line: #ddd8cc;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Newsreader", Georgia, "Times New Roman", serif;
+  font-size: 1.15rem;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem 6rem;
+}
+
+/* ---------------- Nav ---------------- */
+nav {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 3.5rem;
+  padding-bottom: 1.1rem;
+  border-bottom: 1px solid var(--line);
+}
+
+nav a {
+  color: var(--muted);
+  font-size: 1rem;
+  border-bottom: none;
+}
+
+nav a.active {
+  color: var(--ink);
+  border-bottom: 1px solid var(--accent);
+}
+
+/* ---------------- Header / intro ---------------- */
+header h1 {
+  font-size: 2.6rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin: 0 0 0.5rem;
+}
+
+header p.tagline {
+  font-style: italic;
+  color: var(--muted);
+  font-size: 1.2rem;
+  margin: 0 0 2.75rem;
+}
+
+header p {
+  max-width: 60ch;
+}
+
+/* ---------------- Section headings ----------------
+   Small caps instead of tracked uppercase — reads as a
+   scholarly section label without the generic "AI eyebrow"
+   look of letter-spaced all-caps text. */
+h2 {
+  font-variant: small-caps;
+  letter-spacing: 0.02em;
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--ink);
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 0.5rem;
+  margin: 3.5rem 0 1.3rem;
+}
+
+/* ---------------- Links ---------------- */
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(37, 62, 87, 0.35);
+}
+
+a:hover, a:focus {
+  border-bottom-color: var(--accent);
+}
+
+/* ---------------- Item list (research / publications) ---------------- */
+.item {
+  margin-bottom: 1.75rem;
+  max-width: 60ch;
+}
+
+.item h3 {
+  margin: 0 0 0.25rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.item p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+/* ---------------- Contact links ---------------- */
+.contact-list {
+  display: flex;
+  gap: 1.75rem;
+  flex-wrap: wrap;
+}
+
+footer {
+  margin-top: 5rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-style: italic;
+}
